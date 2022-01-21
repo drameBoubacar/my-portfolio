@@ -1,0 +1,202 @@
+/* HEADER */
+header {
+    align-items: center;
+    background-color: #457b9d;
+    color: #EDF2F4 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1.5rem;
+}
+
+h1 a {
+    color: #EDF2F4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+
+.list-header {
+    display: none;
+}
+
+video {
+    width: 100vw;
+}
+
+/* PROJETS */
+
+h2 {
+    text-align: center;
+    color: #457b9d;
+    font-family: 'Lato', sans-serif;
+}
+
+video {
+    display: block;
+}
+
+.container-projects {
+    background-color: #a8dadc;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    background-image: url("./images/plage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    align-self: center;
+    margin:50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+/* MON CV */
+.curriculum {
+    background-image: url("./images/espace.jpg");
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    color: #a8dadc;
+    height: 1000px;
+    padding: 0 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.curriculum h2 {
+    padding-top: 10px;
+    margin: 0;
+    color: #a8dadc;
+}
+
+dt {
+    border-bottom: 2px solid #fff;
+    width: 20%;
+}
+dd {
+    line-height: 25px;
+    text-align: justify;
+    text-align: justify;
+}
+
+.curriculum p {
+    border-bottom: 2px solid #fff;
+    width: 20%;
+}
+/* COMPETENCES */
+.container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills {
+    background-color: #a8dadc;
+    color: black;
+    border-radius: 12px;
+    padding: 30px;
+    width: 35%;
+    text-align: center;
+    margin: 1rem;
+}
+/* FORMULAIRE */
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    background-color: #457b9d;
+    color: #a8dadc;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 15px 60px;
+
+}
+button:hover {
+    background-color: #a8dadc;
+    color: #457b9d;
+    border:1px solid #1d3557;
+}
+input {
+    width: 40%;
+}
+/* FOOTER */
+footer {
+    background: #1d3557;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+ .footer-list li {
+    list-style-type: none;
+    margin-right: 45px;
+}
+
+.footer-list li a {
+    color: #a8dadc;
+}
+
+/* BREAKPOINTS */
+@media screen and (min-width: 767px) {
+    .card {
+        width: 20%;
+        height: 50vh;
+        cursor: pointer;
+    }
+    .card:hover {
+        -webkit-transform : scale(0.7,0.7); 
+        -moz-transform : scale(0.7,0.7); 
+        -ms-transform : scale(0.7,0.7); 
+        -o-transform : scale(0.7,0.7); 
+        transform : scale(0.7,0.7); 
+    }
+    .content-card {
+      display: flex;
+      justify-content: space-around;
+    }
+    .curriculum {
+        height: 600px;
+    }
+    .list-header {
+        display: flex;
+    }
+    .list-header li {
+        list-style-type: none;
+        
+    } 
+    .list-header li a {
+        color: #a8dadc;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .list-header li a:hover {
+       border-bottom: 2px solid rgb(5, 230, 234);
+    }
+    .container-skills {
+        display: flex;
+    }
+    .skills {
+        width: 10%;
+        transform: rotate(45deg);
+    }
+  }
